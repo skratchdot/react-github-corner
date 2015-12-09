@@ -1,0 +1,39 @@
+.header {
+	margin-top: 20px;
+	.title {
+		margin-top: 0;
+		&> span {
+			text-transform: uppercase;
+			color: @text-color;
+		}
+		small {
+			text-transform: lowercase;
+		}
+	}
+	ul.nav {
+		float: right;
+		display: inline-block;
+	}
+}
+
+@media (max-width: @screen-md-max) {
+	.header .title {
+		text-align: center;
+	}
+	.header ul.nav {
+		float: none;
+		text-align: center;
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.header .title small {
+		display: block;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.header ul.nav li {
+		font-size: 10px;
+	}
+}

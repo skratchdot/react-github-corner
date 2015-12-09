@@ -1,0 +1,34 @@
+# npm ignore
+npm-debug.log
+node_modules/*
+
+# Sublime Text
+*.sublime-workspace
+
+# WebStorm IDE
+.idea/
+
+# vim
+*.swp
+
+# kdiff3
+*.orig
+
+# OSX
+Thumbs.db
+.DS_Store
+
+# IIS logs
+iisnode/
+
+# TernJs
+.tern-port
+
+# CTags
+tags
+
+# Code Coverage
+coverage/
+
+# ignores specific to this repo
+build/dev
