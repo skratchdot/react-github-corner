@@ -1,0 +1,4 @@
+[submodule "build/prod"]
+	path = build/prod
+	url = git@github.com:skratchdot/react-github-corner.git
+	branch = gh-pages
