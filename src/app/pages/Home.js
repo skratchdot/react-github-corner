@@ -24,7 +24,7 @@ class Home extends Component {
             </Link>
           </p>
         </Jumbotron>
-        <h1 className="title">Examples</h1>
+        <h1 className="title text-center">Examples</h1>
         {[
           ['#fff', '#151513', '#fff', 'right'],
           ['#fff', '#64CEAA', '#fff', 'right'],
