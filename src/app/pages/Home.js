@@ -19,7 +19,7 @@ class Home extends Component {
             after clicking the button below:
           </p>
           <p>
-            <Link to={`/react-github-corner/about`} className="btn btn-primary">
+            <Link to={'/react-github-corner/about'} className="btn btn-primary">
               About Page
             </Link>
           </p>
