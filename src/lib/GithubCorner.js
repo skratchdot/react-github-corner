@@ -55,7 +55,7 @@ export default class GithubCorner extends Component {
       armStyle.transformOrigin = '130px 106px';
     }
 		return (
-      <a href={href} className="github-corner">
+      <a href={href} className="github-corner" aria-label="Open GitHub project">
         <svg width={width} height={height} viewBox="0 0 250 250" style={mainStyle}>
           <path className="octo-banner" d={pathBanner} fill={bannerColor}></path>
           <path className="octo-arm" d={pathArm} style={armStyle}></path>
