@@ -2,7 +2,8 @@
 {
 	"parser": "babel-eslint",
 	"plugins": [
-		"react"
+		"react",
+    "jsx-a11y"
 	],
 	"ecmaFeatures": {
 		"jsx": true,
@@ -70,5 +71,8 @@
 		"strict": [1, "never"],
 		"valid-jsdoc": 2
 	},
-	"extends": "eslint:recommended"
+	"extends": [
+    "eslint:recommended",
+    "plugin:jsx-a11y/recommended"
+  ]
 }
