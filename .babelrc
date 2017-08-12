@@ -1,3 +1,11 @@
 {
-  presets: ['es2015', 'react']
+  presets: ['env', 'react', 'stage-0'],
+  env: {
+    production: {
+      plugins: [
+        'transform-react-remove-prop-types',
+        './src/plugins/remove-prop-types-import'
+      ]
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Jumbotron } from 'react-bootstrap';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import GithubCorner from '../../lib/GithubCorner';
 
@@ -42,22 +42,29 @@ class Home extends Component {
           ['#000', '#64CEAA', '#fff', 'left'],
           ['#000', '#FD6C6C', '#fff', 'left'],
           ['#000', '#70B7FD', '#fff', 'left']
-        ].map(function (obj, i) {
-          const [ backgroundColor, bannerColor, octoColor, direction ] = obj;
+        ].map((obj, i) => {
+          const [backgroundColor, bannerColor, octoColor, direction] = obj;
           const height = 200;
           return (
-            <Row key={i} style={{
+            <Row
+              key={i}
+              style={{
                 margin: 20,
                 padding: 20,
                 backgroundColor: '#f8f8f8',
                 border: '2px solid #aaa',
                 borderRadius: 20
-            }}>
-              <Col mdOffset={3} md={3} style={{
+              }}
+            >
+              <Col
+                mdOffset={3}
+                md={3}
+                style={{
                   display: 'relative',
                   height: height,
                   background: backgroundColor
-              }}>
+                }}
+              >
                 <GithubCorner
                   href=""
                   bannerColor={bannerColor}
@@ -68,7 +75,7 @@ class Home extends Component {
                 />
               </Col>
               <Col md={3}>
-                <pre style={{width: '100%', height: height}}>
+                <pre style={{ width: '100%', height: height }}>
                   {`<GithubCorner
   href={customHref}
   bannerColor="${bannerColor}"

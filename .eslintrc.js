@@ -1,19 +1,25 @@
-// adapted from: https://github.com/Khan/style-guides/pull/25
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+    node: true
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended'
+  ],
+  parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module'
+  },
+  plugins: ['react', 'jsx-a11y'],
+  rules: {}
+};
+
+/*
 {
-	"parser": "babel-eslint",
-	"plugins": [
-		"react",
-    "jsx-a11y"
-	],
-	"ecmaFeatures": {
-		"jsx": true,
-		"modules": true
-	},
-	"env": {
-		"browser": true,
-		"node": true,
-		"es6": true
-	},
 	"rules": {
 		"arrow-parens": [2, "always"],
 		"arrow-spacing": 2,
@@ -36,7 +42,6 @@
 			"ignoreUrls": true,
 			"ignorePattern": "^\\s*const\\s.+=\\s*require\\s*\\("
 		}],
-		*/
 		"no-alert": 2,
 		"no-array-constructor": 2,
 		"no-const-assign": 2,
@@ -71,8 +76,5 @@
 		"strict": [1, "never"],
 		"valid-jsdoc": 2
 	},
-	"extends": [
-    "eslint:recommended",
-    "plugin:jsx-a11y/recommended"
-  ]
 }
+*/
