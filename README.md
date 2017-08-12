@@ -51,6 +51,7 @@ Here are the props you can pass to the `GithubCorner` instance:
 | direction | String | 'right' | Whether the banner shows up on the right or left |
 | octoColor | String | '#fff' | The CSS color of the Octocat |
 | bannerColor | String | '#151513' | The CSS color of the banner |
+| ariaLabel | String | 'Open GitHub project' | The aria-label for a11y support |
 
 
 ## Links

@@ -21,7 +21,8 @@ export default class GithubCorner extends Component {
     height: 80,
     direction: 'right',
     octoColor: '#fff',
-    bannerColor: '#151513'
+    bannerColor: '#151513',
+    ariaLabel: 'Open GitHub project'
   };
   static propTypes = {
     href: PropTypes.string,
@@ -29,7 +30,8 @@ export default class GithubCorner extends Component {
     height: PropTypes.number,
     direction: PropTypes.string,
     octoColor: PropTypes.string,
-    bannerColor: PropTypes.string
+    bannerColor: PropTypes.string,
+    ariaLabel: PropTypes.string
   };
   componentDidMount() {
     if (!document.getElementById(githubCornerStyleId)) {
@@ -52,7 +54,8 @@ export default class GithubCorner extends Component {
       height,
       direction,
       octoColor,
-      bannerColor
+      bannerColor,
+      ariaLabel
     } = this.props;
     const mainStyle = {
       position: 'absolute',
@@ -83,7 +86,7 @@ export default class GithubCorner extends Component {
       armStyle.transformOrigin = '130px 106px';
     }
     return (
-      <a href={href} className="github-corner" aria-label="Open GitHub project">
+      <a href={href} className="github-corner" aria-label={ariaLabel}>
         <svg
           width={width}
           height={height}
