@@ -33,6 +33,7 @@ module.exports = () => {
       extractLess,
       new CopyWebpackPlugin(
         [
+          { from: '../../README.md', to: './README.md' },
           { from: './index.html', to: './index.html' },
           { from: './index.html', to: './404.html' },
           { from: './favicon.ico', to: './favicon.ico' }
