@@ -18,17 +18,19 @@
   "engines": {
     "node": ">= 4.0.0"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
-    "build": "npm-run-all clean format lint transpile webpack",
-    "clean": "npm-run-all clean:lib clean:dev clean:prod",
+    "build": "npm-run-all clean format lint cover transpile webpack",
+    "clean": "npm-run-all clean:coverage clean:lib clean:dev clean:prod",
+    "clean:coverage": "rimraf coverage/",
     "clean:lib": "rimraf lib/",
     "clean:dev": "rimraf ./build/dev/react-github-corner/*",
     "clean:prod": "rimraf ./build/prod/*",
+    "cover": "jest --coverage",
     "format": "prettier --write --single-quote 'src/**/*.js' '*.js'",
     "lint": "eslint src",
     "test": "jest",
-    "transpile": "cross-env BABEL_ENV=production babel -s -d lib src/lib",
+    "transpile": "cross-env BABEL_ENV=production babel -s true --ignore test.js -d lib src/lib ",
     "start": "webpack-dev-server",
     "webpack": "npm-run-all webpack:dev webpack:prod",
     "webpack:dev": "cross-env NODE_ENV=development webpack",
@@ -42,6 +44,7 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.8.0",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
     "babel-preset-env": "^1.6.0",
@@ -51,11 +54,14 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
     "eslint": "^4.4.1",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.2.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "html-loader": "^0.5.1",
+    "jest": "^20.0.4",
+    "jsdom": "^11.1.0",
     "less": "^2.7.1",
     "less-loader": "^4.0.5",
     "markdown-loader": "^2.0.1",
@@ -65,9 +71,10 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
-    "react-dom": "^15.0.2",
+    "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.1.2",
+    "react-test-renderer": "^15.6.1",
     "redux": "^3.5.2",
     "redux-devtools": "^3.3.1",
     "redux-thunk": "^2.0.1",
@@ -75,6 +82,18 @@
     "url-loader": "^0.5.7",
     "webpack": "^3.5.4",
     "webpack-dev-server": "^2.7.1"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/lib/**/*.js"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "html",
+      "json",
+      "lcovonly"
+    ]
   },
   "keywords": [
     "react",

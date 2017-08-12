@@ -1,5 +1,7 @@
-export default function getGithubCornerStyles() {
-  return `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get-github-corner-styles 1`] = `
+"
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
@@ -39,5 +41,5 @@ export default function getGithubCornerStyles() {
         animation: octocat-wave 560ms ease-in-out;
     }
 }
+"
 `;
-}

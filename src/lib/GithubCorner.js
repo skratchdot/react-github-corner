@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import getGithubCornerStyles from './styles.js';
+import getGithubCornerStyles from './get-github-corner-styles.js';
 
 const githubCornerStyleId = '____GITHUB_CORNER_SUPER_SECRET___';
 const githubCornerStyles = getGithubCornerStyles();
