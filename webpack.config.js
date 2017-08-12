@@ -31,11 +31,14 @@ module.exports = () => {
     },
     plugins: [
       extractLess,
-      new CopyWebpackPlugin([
-        { from: './index.html', to: './index.html' },
-        { from: './index.html', to: './404.html' },
-        { from: './favicon.ico', to: './favicon.ico' }
-      ]),
+      new CopyWebpackPlugin(
+        [
+          { from: './index.html', to: './index.html' },
+          { from: './index.html', to: './404.html' },
+          { from: './favicon.ico', to: './favicon.ico' }
+        ],
+        { copyUnmodified: true }
+      ),
       new webpack.DefinePlugin({
         'process.env': {
           // This has effect on the react lib size
