@@ -28,6 +28,18 @@ test('GithubCorner with non-left directions', () => {
   expect(wrappers[0]).toEqual(wrappers[1]);
 });
 
+test('with additional props', () => {
+  const wrapper = shallow(<GithubCorner style="display:none" />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('merge className attribute', () => {
+  const wrapper = shallow(<GithubCorner className="wow cool" />);
+  expect(wrapper).toMatchSnapshot();
+  expect(wrapper.find('.github-corner').hasClass('wow')).toEqual(true);
+  expect(wrapper.find('.github-corner').hasClass('cool')).toEqual(true);
+});
+
 test('it mounts', () => {
   const headBefore = document.head.innerHTML;
   const wrapper = mount(<GithubCorner />);

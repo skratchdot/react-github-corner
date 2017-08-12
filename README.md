@@ -44,7 +44,7 @@ export default class MyApp extends Component {
 Here are the props you can pass to the `GithubCorner` instance:
 
 | Property Name | Type | Default Value | Description |
-|--------------:|:----:|:-------------:|-------------|
+|:-------------:|:----:|:-------------:|-------------|
 | href | String | '/' | The link to your project page |
 | width | Number or String | 80 | The width of the banner |
 | height | Number or String | 80 | The height of the banner |
@@ -52,6 +52,14 @@ Here are the props you can pass to the `GithubCorner` instance:
 | octoColor | String | '#fff' | The CSS color of the Octocat |
 | bannerColor | String | '#151513' | The CSS color of the banner |
 | ariaLabel | String | 'Open GitHub project' | The aria-label for a11y support |
+| className | String | undefined | Additional class names to be merged with the `github-corner` default |
+
+Any additional props will be added to the `<a />` tag that is rendered.
+For instance, you can do:
+```
+<GithubCorner style="display:none" />
+```
+and the `style` attribute will be rendered (which will hide the element).
 
 
 ## Links

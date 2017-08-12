@@ -15,6 +15,16 @@ const githubCornerStyles = getGithubCornerStyles();
  * <GithubCorner href="http://skratchdot.com/" />
  */
 export default class GithubCorner extends Component {
+  static propTypes = {
+    href: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    direction: PropTypes.string,
+    octoColor: PropTypes.string,
+    bannerColor: PropTypes.string,
+    ariaLabel: PropTypes.string,
+    className: PropTypes.string
+  };
   static defaultProps = {
     href: '/',
     width: 80,
@@ -23,15 +33,6 @@ export default class GithubCorner extends Component {
     octoColor: '#fff',
     bannerColor: '#151513',
     ariaLabel: 'Open GitHub project'
-  };
-  static propTypes = {
-    href: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    direction: PropTypes.string,
-    octoColor: PropTypes.string,
-    bannerColor: PropTypes.string,
-    ariaLabel: PropTypes.string
   };
   componentDidMount() {
     if (!document.getElementById(githubCornerStyleId)) {
@@ -55,7 +56,9 @@ export default class GithubCorner extends Component {
       direction,
       octoColor,
       bannerColor,
-      ariaLabel
+      ariaLabel,
+      className,
+      ...otherProps
     } = this.props;
     const mainStyle = {
       position: 'absolute',
@@ -85,8 +88,15 @@ export default class GithubCorner extends Component {
       armStyle.WebkitTransformOrigin = '130px 106px';
       armStyle.transformOrigin = '130px 106px';
     }
+    const additionalClass =
+      typeof className === 'string' ? ` ${className}` : '';
     return (
-      <a href={href} className="github-corner" aria-label={ariaLabel}>
+      <a
+        {...otherProps}
+        href={href}
+        className={`github-corner${additionalClass}`}
+        aria-label={ariaLabel}
+      >
         <svg
           width={width}
           height={height}
