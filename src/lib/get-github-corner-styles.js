@@ -5,28 +5,16 @@ export default () => {
 }
 
 @keyframes octocat-wave {
-  0% {
+  0%, 100% {
     transform: rotate(0deg);
   }
 
-  20% {
+  20%, 60% {
     transform: rotate(-25deg);
   }
 
-  40% {
+  40%, 80% {
     transform: rotate(10deg);
-  }
-
-  60% {
-   transform: rotate(-25deg);
-  }
-
-  80% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
   }
 }
 
