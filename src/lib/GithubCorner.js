@@ -25,7 +25,8 @@ export default class GithubCorner extends Component {
     octoColor: PropTypes.string,
     bannerColor: PropTypes.string,
     ariaLabel: PropTypes.string,
-    className: PropTypes.string
+    className: PropTypes.string,
+    style: PropTypes.object
   };
   static defaultProps = {
     href: '/',
@@ -58,6 +59,7 @@ export default class GithubCorner extends Component {
       bannerColor,
       ariaLabel,
       className,
+      style,
       ...otherProps
     } = this.props;
     const mainStyle = {
@@ -101,7 +103,10 @@ export default class GithubCorner extends Component {
           width={size}
           height={size}
           viewBox="0 0 250 250"
-          style={mainStyle}
+          style={{
+            ...mainStyle,
+            ...style,
+          }}
         >
           <path className="octo-banner" d={pathBanner} fill={bannerColor} />
           <path className="octo-arm" d={pathArm} style={armStyle} />
