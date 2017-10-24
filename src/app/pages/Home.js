@@ -55,7 +55,7 @@ class Home extends Component {
             bannerColor,
             octoColor,
             direction,
-            customStyle
+            svgStyle
           ] = obj;
           const height = 200;
           return (
@@ -84,7 +84,7 @@ class Home extends Component {
                   octoColor={octoColor}
                   size={80}
                   direction={direction}
-                  style={customStyle}
+                  svgStyle={svgStyle}
                 />
               </Col>
               <Col md={3}>
@@ -95,7 +95,7 @@ class Home extends Component {
   octoColor="${octoColor}"
   size={80}
   direction="${direction}"
-  ${customStyle ? `style={${JSON.stringify(customStyle)}}` : ''}
+  ${svgStyle ? `svgStyle={${JSON.stringify(svgStyle)}}` : ''}
 />`}
                 </pre>
               </Col>

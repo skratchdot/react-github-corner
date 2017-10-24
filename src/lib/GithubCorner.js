@@ -23,7 +23,7 @@ export default class GithubCorner extends Component {
     bannerColor: PropTypes.string,
     ariaLabel: PropTypes.string,
     className: PropTypes.string,
-    style: PropTypes.object
+    svgStyle: PropTypes.object
   };
   static defaultProps = {
     href: '/',
@@ -56,7 +56,7 @@ export default class GithubCorner extends Component {
       bannerColor,
       ariaLabel,
       className,
-      style,
+      svgStyle,
       ...otherProps
     } = this.props;
     const mainStyle = {
@@ -102,7 +102,7 @@ export default class GithubCorner extends Component {
           viewBox="0 0 250 250"
           style={{
             ...mainStyle,
-            ...style
+            ...svgStyle
           }}
         >
           <path className="octo-banner" d={pathBanner} fill={bannerColor} />

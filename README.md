@@ -52,7 +52,7 @@ Here are the props you can pass to the `GithubCorner` instance:
 | bannerColor | String | '#151513' | The CSS color of the banner |
 | ariaLabel | String | 'Open GitHub project' | The aria-label for a11y support |
 | className | String | undefined | Additional class names to be merged with the `github-corner` default |
-| style | Object | undefined | Custom styles to apply to the main `svg` element |
+| svgStyle | Object | undefined | Custom styles to apply to the main `svg` element |
 
 Any additional props will be added to the `<a />` tag that is rendered.
 For instance, you can do:

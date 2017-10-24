@@ -1291,23 +1291,12 @@ ShallowWrapper {
     aria-label="Open GitHub project"
     className="github-corner"
     href="/"
+    style="display:none"
 >
     <svg
         height={80}
         style={
             Object {
-                "0": "d",
-                "1": "i",
-                "10": "n",
-                "11": "e",
-                "2": "s",
-                "3": "p",
-                "4": "l",
-                "5": "a",
-                "6": "y",
-                "7": ":",
-                "8": "n",
-                "9": "o",
                 "fill": "#fff",
                 "position": "absolute",
                 "right": 0,
@@ -1343,23 +1332,12 @@ ShallowWrapper {
       aria-label="Open GitHub project"
       className="github-corner"
       href="/"
+      style="display:none"
 >
       <svg
             height={80}
             style={
                   Object {
-                        "0": "d",
-                        "1": "i",
-                        "10": "n",
-                        "11": "e",
-                        "2": "s",
-                        "3": "p",
-                        "4": "l",
-                        "5": "a",
-                        "6": "y",
-                        "7": ":",
-                        "8": "n",
-                        "9": "o",
                         "fill": "#fff",
                         "position": "absolute",
                         "right": 0,
@@ -1445,23 +1423,12 @@ ShallowWrapper {
           aria-label="Open GitHub project"
           className="github-corner"
           href="/"
+          style="display:none"
 >
           <svg
                     height={80}
                     style={
                               Object {
-                                        "0": "d",
-                                        "1": "i",
-                                        "10": "n",
-                                        "11": "e",
-                                        "2": "s",
-                                        "3": "p",
-                                        "4": "l",
-                                        "5": "a",
-                                        "6": "y",
-                                        "7": ":",
-                                        "8": "n",
-                                        "9": "o",
                                         "fill": "#fff",
                                         "position": "absolute",
                                         "right": 0,
@@ -1497,23 +1464,12 @@ ShallowWrapper {
           aria-label="Open GitHub project"
           className="github-corner"
           href="/"
+          style="display:none"
 >
           <svg
                     height={80}
                     style={
                               Object {
-                                        "0": "d",
-                                        "1": "i",
-                                        "10": "n",
-                                        "11": "e",
-                                        "2": "s",
-                                        "3": "p",
-                                        "4": "l",
-                                        "5": "a",
-                                        "6": "y",
-                                        "7": ":",
-                                        "8": "n",
-                                        "9": "o",
                                         "fill": "#fff",
                                         "position": "absolute",
                                         "right": 0,
