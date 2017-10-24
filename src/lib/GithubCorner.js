@@ -17,18 +17,20 @@ const githubCornerStyles = getGithubCornerStyles();
 export default class GithubCorner extends Component {
   static propTypes = {
     href: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
+    size: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.string
+    ]),
     direction: PropTypes.string,
     octoColor: PropTypes.string,
     bannerColor: PropTypes.string,
     ariaLabel: PropTypes.string,
-    className: PropTypes.string
+    className: PropTypes.string,
+    style: PropTypes.object
   };
   static defaultProps = {
     href: '/',
-    width: 80,
-    height: 80,
+    size: 80,
     direction: 'right',
     octoColor: '#fff',
     bannerColor: '#151513',
@@ -51,13 +53,13 @@ export default class GithubCorner extends Component {
   render() {
     const {
       href,
-      width,
-      height,
+      size,
       direction,
       octoColor,
       bannerColor,
       ariaLabel,
       className,
+      style,
       ...otherProps
     } = this.props;
     const mainStyle = {
@@ -98,10 +100,13 @@ export default class GithubCorner extends Component {
         aria-label={ariaLabel}
       >
         <svg
-          width={width}
-          height={height}
+          width={size}
+          height={size}
           viewBox="0 0 250 250"
-          style={mainStyle}
+          style={{
+            ...mainStyle,
+            ...style,
+          }}
         >
           <path className="octo-banner" d={pathBanner} fill={bannerColor} />
           <path className="octo-arm" d={pathArm} style={armStyle} />
