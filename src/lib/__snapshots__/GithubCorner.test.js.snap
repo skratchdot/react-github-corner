@@ -98,10 +98,9 @@ ShallowWrapper {
         ariaLabel="Open GitHub project"
         bannerColor="#151513"
         direction="left"
-        height={80}
         href="/"
         octoColor="#fff"
-        width={80}
+        size={80}
 />,
       "_debugID": 3,
       "_hostContainerInfo": null,
@@ -113,10 +112,9 @@ ShallowWrapper {
           "ariaLabel": "Open GitHub project",
           "bannerColor": "#151513",
           "direction": "left",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
-          "width": 80,
+          "size": 80,
         },
         "refs": Object {},
         "state": null,
@@ -232,10 +230,9 @@ ShallowWrapper {
     ariaLabel="Open GitHub project"
     bannerColor="#151513"
     direction="left"
-    height={80}
     href="/"
     octoColor="#fff"
-    width={80}
+    size={80}
 />,
 }
 `;
@@ -338,10 +335,9 @@ ShallowWrapper {
         ariaLabel="Open GitHub project"
         bannerColor="#151513"
         direction="right"
-        height={80}
         href="/"
         octoColor="#fff"
-        width={80}
+        size={80}
 />,
       "_debugID": 5,
       "_hostContainerInfo": null,
@@ -353,10 +349,9 @@ ShallowWrapper {
           "ariaLabel": "Open GitHub project",
           "bannerColor": "#151513",
           "direction": "right",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
-          "width": 80,
+          "size": 80,
         },
         "refs": Object {},
         "state": null,
@@ -472,10 +467,9 @@ ShallowWrapper {
     ariaLabel="Open GitHub project"
     bannerColor="#151513"
     direction="right"
-    height={80}
     href="/"
     octoColor="#fff"
-    width={80}
+    size={80}
 />,
 }
 `;
@@ -578,10 +572,9 @@ ShallowWrapper {
         ariaLabel="Open GitHub project"
         bannerColor="#151513"
         direction="invalid"
-        height={80}
         href="/"
         octoColor="#fff"
-        width={80}
+        size={80}
 />,
       "_debugID": 7,
       "_hostContainerInfo": null,
@@ -593,10 +586,9 @@ ShallowWrapper {
           "ariaLabel": "Open GitHub project",
           "bannerColor": "#151513",
           "direction": "invalid",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
-          "width": 80,
+          "size": 80,
         },
         "refs": Object {},
         "state": null,
@@ -712,10 +704,9 @@ ShallowWrapper {
     ariaLabel="Open GitHub project"
     bannerColor="#151513"
     direction="invalid"
-    height={80}
     href="/"
     octoColor="#fff"
-    width={80}
+    size={80}
 />,
 }
 `;
@@ -818,10 +809,9 @@ ShallowWrapper {
         ariaLabel="Open GitHub project"
         bannerColor="#151513"
         direction="right"
-        height={80}
         href="/"
         octoColor="#fff"
-        width={80}
+        size={80}
 />,
       "_debugID": 1,
       "_hostContainerInfo": null,
@@ -833,10 +823,9 @@ ShallowWrapper {
           "ariaLabel": "Open GitHub project",
           "bannerColor": "#151513",
           "direction": "right",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
-          "width": 80,
+          "size": 80,
         },
         "refs": Object {},
         "state": null,
@@ -952,10 +941,9 @@ ShallowWrapper {
     ariaLabel="Open GitHub project"
     bannerColor="#151513"
     direction="right"
-    height={80}
     href="/"
     octoColor="#fff"
-    width={80}
+    size={80}
 />,
 }
 `;
@@ -970,28 +958,16 @@ Object {
 }
 
 @keyframes octocat-wave {
-  0% {
+  0%, 100% {
     transform: rotate(0deg);
   }
 
-  20% {
+  20%, 60% {
     transform: rotate(-25deg);
   }
 
-  40% {
+  40%, 80% {
     transform: rotate(10deg);
-  }
-
-  60% {
-   transform: rotate(-25deg);
-  }
-
-  80% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
   }
 }
 
@@ -1108,10 +1084,9 @@ ShallowWrapper {
         bannerColor="#151513"
         className="wow cool"
         direction="right"
-        height={80}
         href="/"
         octoColor="#fff"
-        width={80}
+        size={80}
 />,
       "_debugID": 11,
       "_hostContainerInfo": null,
@@ -1124,10 +1099,9 @@ ShallowWrapper {
           "bannerColor": "#151513",
           "className": "wow cool",
           "direction": "right",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
-          "width": 80,
+          "size": 80,
         },
         "refs": Object {},
         "state": null,
@@ -1244,10 +1218,9 @@ ShallowWrapper {
     bannerColor="#151513"
     className="wow cool"
     direction="right"
-    height={80}
     href="/"
     octoColor="#fff"
-    width={80}
+    size={80}
 />,
 }
 `;
@@ -1268,7 +1241,7 @@ Array [
       type="text/css"
       id="____GITHUB_CORNER_SUPER_SECRET___"
 >
-      .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; } @keyframes octocat-wave { 0% { transform: rotate(0deg); } 20% { transform: rotate(-25deg); } 40% { transform: rotate(10deg); } 60% { transform: rotate(-25deg); } 80% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } } @media (max-width: 500px) { .github-corner:hover .octo-arm { animation: none; } .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; } }
+      .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; } @keyframes octocat-wave { 0%, 100% { transform: rotate(0deg); } 20%, 60% { transform: rotate(-25deg); } 40%, 80% { transform: rotate(10deg); } } @media (max-width: 500px) { .github-corner:hover .octo-arm { animation: none; } .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; } }
 </style>,
   ],
 ]
@@ -1281,28 +1254,16 @@ exports[`when style.stylesheet exists we use cssText 1`] = `
 }
 
 @keyframes octocat-wave {
-  0% {
+  0%, 100% {
     transform: rotate(0deg);
   }
 
-  20% {
+  20%, 60% {
     transform: rotate(-25deg);
   }
 
-  40% {
+  40%, 80% {
     transform: rotate(10deg);
-  }
-
-  60% {
-   transform: rotate(-25deg);
-  }
-
-  80% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
   }
 }
 
@@ -1330,12 +1291,23 @@ ShallowWrapper {
     aria-label="Open GitHub project"
     className="github-corner"
     href="/"
-    style="display:none"
 >
     <svg
         height={80}
         style={
             Object {
+                "0": "d",
+                "1": "i",
+                "10": "n",
+                "11": "e",
+                "2": "s",
+                "3": "p",
+                "4": "l",
+                "5": "a",
+                "6": "y",
+                "7": ":",
+                "8": "n",
+                "9": "o",
                 "fill": "#fff",
                 "position": "absolute",
                 "right": 0,
@@ -1371,12 +1343,23 @@ ShallowWrapper {
       aria-label="Open GitHub project"
       className="github-corner"
       href="/"
-      style="display:none"
 >
       <svg
             height={80}
             style={
                   Object {
+                        "0": "d",
+                        "1": "i",
+                        "10": "n",
+                        "11": "e",
+                        "2": "s",
+                        "3": "p",
+                        "4": "l",
+                        "5": "a",
+                        "6": "y",
+                        "7": ":",
+                        "8": "n",
+                        "9": "o",
                         "fill": "#fff",
                         "position": "absolute",
                         "right": 0,
@@ -1418,11 +1401,10 @@ ShallowWrapper {
         ariaLabel="Open GitHub project"
         bannerColor="#151513"
         direction="right"
-        height={80}
         href="/"
         octoColor="#fff"
+        size={80}
         style="display:none"
-        width={80}
 />,
       "_debugID": 9,
       "_hostContainerInfo": null,
@@ -1434,11 +1416,10 @@ ShallowWrapper {
           "ariaLabel": "Open GitHub project",
           "bannerColor": "#151513",
           "direction": "right",
-          "height": 80,
           "href": "/",
           "octoColor": "#fff",
+          "size": 80,
           "style": "display:none",
-          "width": 80,
         },
         "refs": Object {},
         "state": null,
@@ -1464,12 +1445,23 @@ ShallowWrapper {
           aria-label="Open GitHub project"
           className="github-corner"
           href="/"
-          style="display:none"
 >
           <svg
                     height={80}
                     style={
                               Object {
+                                        "0": "d",
+                                        "1": "i",
+                                        "10": "n",
+                                        "11": "e",
+                                        "2": "s",
+                                        "3": "p",
+                                        "4": "l",
+                                        "5": "a",
+                                        "6": "y",
+                                        "7": ":",
+                                        "8": "n",
+                                        "9": "o",
                                         "fill": "#fff",
                                         "position": "absolute",
                                         "right": 0,
@@ -1505,12 +1497,23 @@ ShallowWrapper {
           aria-label="Open GitHub project"
           className="github-corner"
           href="/"
-          style="display:none"
 >
           <svg
                     height={80}
                     style={
                               Object {
+                                        "0": "d",
+                                        "1": "i",
+                                        "10": "n",
+                                        "11": "e",
+                                        "2": "s",
+                                        "3": "p",
+                                        "4": "l",
+                                        "5": "a",
+                                        "6": "y",
+                                        "7": ":",
+                                        "8": "n",
+                                        "9": "o",
                                         "fill": "#fff",
                                         "position": "absolute",
                                         "right": 0,
@@ -1556,11 +1559,10 @@ ShallowWrapper {
     ariaLabel="Open GitHub project"
     bannerColor="#151513"
     direction="right"
-    height={80}
     href="/"
     octoColor="#fff"
+    size={80}
     style="display:none"
-    width={80}
 />,
 }
 `;

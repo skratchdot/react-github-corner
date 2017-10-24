@@ -42,9 +42,21 @@ class Home extends Component {
           ['#000', '#64CEAA', '#fff', 'left'],
           ['#000', '#FD6C6C', '#fff', 'left'],
           ['#000', '#70B7FD', '#fff', 'left'],
-          ['linear-gradient(to right, orange, blue, violet)', '#000', '#fff', 'left', { mixBlendMode: 'darken'}]
+          [
+            'linear-gradient(to right, orange, blue, violet)',
+            '#000',
+            '#fff',
+            'left',
+            { mixBlendMode: 'darken' }
+          ]
         ].map((obj, i) => {
-          const [backgroundColor, bannerColor, octoColor, direction, customStyle] = obj;
+          const [
+            backgroundColor,
+            bannerColor,
+            octoColor,
+            direction,
+            customStyle
+          ] = obj;
           const height = 200;
           return (
             <Row

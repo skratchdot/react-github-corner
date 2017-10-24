@@ -17,10 +17,7 @@ const githubCornerStyles = getGithubCornerStyles();
 export default class GithubCorner extends Component {
   static propTypes = {
     href: PropTypes.string,
-    size: PropTypes.oneOfType([
-      PropTypes.number,
-      PropTypes.string
-    ]),
+    size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     direction: PropTypes.string,
     octoColor: PropTypes.string,
     bannerColor: PropTypes.string,
@@ -105,7 +102,7 @@ export default class GithubCorner extends Component {
           viewBox="0 0 250 250"
           style={{
             ...mainStyle,
-            ...style,
+            ...style
           }}
         >
           <path className="octo-banner" d={pathBanner} fill={bannerColor} />
