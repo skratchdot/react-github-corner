@@ -41,9 +41,10 @@ class Home extends Component {
           ['#000', '#fff', '#000', 'left'],
           ['#000', '#64CEAA', '#fff', 'left'],
           ['#000', '#FD6C6C', '#fff', 'left'],
-          ['#000', '#70B7FD', '#fff', 'left']
+          ['#000', '#70B7FD', '#fff', 'left'],
+          ['linear-gradient(to right, orange, blue, violet)', '#000', '#fff', 'left', { mixBlendMode: 'darken'}]
         ].map((obj, i) => {
-          const [backgroundColor, bannerColor, octoColor, direction] = obj;
+          const [backgroundColor, bannerColor, octoColor, direction, customStyle] = obj;
           const height = 200;
           return (
             <Row
@@ -51,7 +52,7 @@ class Home extends Component {
               style={{
                 margin: 20,
                 padding: 20,
-                backgroundColor: '#f8f8f8',
+                background: '#f8f8f8',
                 border: '2px solid #aaa',
                 borderRadius: 20
               }}
@@ -71,6 +72,7 @@ class Home extends Component {
                   octoColor={octoColor}
                   size={80}
                   direction={direction}
+                  style={customStyle}
                 />
               </Col>
               <Col md={3}>
@@ -81,6 +83,7 @@ class Home extends Component {
   octoColor="${octoColor}"
   size={80}
   direction="${direction}"
+  ${customStyle ? `style={${JSON.stringify(customStyle)}}` : ''}
 />`}
                 </pre>
               </Col>
