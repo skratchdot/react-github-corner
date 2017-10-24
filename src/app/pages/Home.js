@@ -101,7 +101,9 @@ class Home extends Component {
   bannerColor="${bannerColor}"
   octoColor="${octoColor}"
   size={80}
-  direction="${direction}" ${svgStyle ? `\n  svgStyle={${JSON.stringify(svgStyle)}}` : ''}
+  direction="${direction}" ${svgStyle
+                    ? `\n  svgStyle={${JSON.stringify(svgStyle)}}`
+                    : ''}
 />`}
                 </pre>
               </Col>

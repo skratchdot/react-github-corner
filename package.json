@@ -1,7 +1,7 @@
 {
   "name": "react-github-corner",
   "description": "Add a Github banner to your project page. A React version of: https://github.com/tholman/github-corners",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/skratchdot/react-github-corner/",
   "main": "./lib/GithubCorner.js",
   "author": {
