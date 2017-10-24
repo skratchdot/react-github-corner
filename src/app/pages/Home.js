@@ -34,6 +34,13 @@ class Home extends Component {
           ['#000', '#64CEAA', '#fff', 'right'],
           ['#000', '#FD6C6C', '#fff', 'right'],
           ['#000', '#70B7FD', '#fff', 'right'],
+          [
+            'linear-gradient(to right, orange, blue, violet)',
+            '#000',
+            '#fff',
+            'right',
+            { mixBlendMode: 'darken' }
+          ],
           ['#fff', '#151513', '#fff', 'left'],
           ['#fff', '#64CEAA', '#fff', 'left'],
           ['#fff', '#FD6C6C', '#fff', 'left'],
@@ -94,8 +101,7 @@ class Home extends Component {
   bannerColor="${bannerColor}"
   octoColor="${octoColor}"
   size={80}
-  direction="${direction}"
-  ${svgStyle ? `svgStyle={${JSON.stringify(svgStyle)}}` : ''}
+  direction="${direction}" ${svgStyle ? `\n  svgStyle={${JSON.stringify(svgStyle)}}` : ''}
 />`}
                 </pre>
               </Col>
