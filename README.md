@@ -46,13 +46,13 @@ Here are the props you can pass to the `GithubCorner` instance:
 | Property Name | Type | Default Value | Description |
 |:-------------:|:----:|:-------------:|-------------|
 | href | String | '/' | The link to your project page |
-| width | Number or String | 80 | The width of the banner |
-| height | Number or String | 80 | The height of the banner |
+| size | Number or String | 80 | The width and height of the banner |
 | direction | String | 'right' | Whether the banner shows up on the right or left |
 | octoColor | String | '#fff' | The CSS color of the Octocat |
 | bannerColor | String | '#151513' | The CSS color of the banner |
 | ariaLabel | String | 'Open GitHub project' | The aria-label for a11y support |
 | className | String | undefined | Additional class names to be merged with the `github-corner` default |
+| svgStyle | Object | undefined | Custom styles to apply to the main `svg` element |
 
 Any additional props will be added to the `<a />` tag that is rendered.
 For instance, you can do:
