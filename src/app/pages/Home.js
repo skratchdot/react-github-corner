@@ -69,8 +69,7 @@ class Home extends Component {
                   href=""
                   bannerColor={bannerColor}
                   octoColor={octoColor}
-                  width={80}
-                  height={80}
+                  size={80}
                   direction={direction}
                 />
               </Col>
@@ -80,8 +79,7 @@ class Home extends Component {
   href={customHref}
   bannerColor="${bannerColor}"
   octoColor="${octoColor}"
-  width={80}
-  height={80}
+  size={80}
   direction="${direction}"
 />`}
                 </pre>
