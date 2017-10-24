@@ -711,6 +711,260 @@ ShallowWrapper {
 }
 `;
 
+exports[`can use svgStyle prop 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <a
+    aria-label="Open GitHub project"
+    className="github-corner"
+    href="/"
+>
+    <svg
+        height={80}
+        style={
+            Object {
+                "fill": "#fff",
+                "mixBlendMode": "darken",
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+        }
+        viewBox="0 0 250 250"
+        width={80}
+    >
+        <path
+            className="octo-banner"
+            d="M0 0l115 115h15l12 27 108 108V0z"
+            fill="#151513"
+        />
+        <path
+            className="octo-arm"
+            d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16"
+            style={
+                Object {
+                    "WebkitTransformOrigin": "130px 106px",
+                    "transformOrigin": "130px 106px",
+                  }
+            }
+        />
+        <path
+            className="octo-body"
+            d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"
+        />
+    </svg>
+</a>,
+  "nodes": Array [
+    <a
+      aria-label="Open GitHub project"
+      className="github-corner"
+      href="/"
+>
+      <svg
+            height={80}
+            style={
+                  Object {
+                        "fill": "#fff",
+                        "mixBlendMode": "darken",
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                      }
+            }
+            viewBox="0 0 250 250"
+            width={80}
+      >
+            <path
+                  className="octo-banner"
+                  d="M0 0l115 115h15l12 27 108 108V0z"
+                  fill="#151513"
+            />
+            <path
+                  className="octo-arm"
+                  d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16"
+                  style={
+                        Object {
+                              "WebkitTransformOrigin": "130px 106px",
+                              "transformOrigin": "130px 106px",
+                            }
+                  }
+            />
+            <path
+                  className="octo-body"
+                  d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"
+            />
+      </svg>
+</a>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <GithubCorner
+        ariaLabel="Open GitHub project"
+        bannerColor="#151513"
+        direction="right"
+        href="/"
+        octoColor="#fff"
+        size={80}
+        svgStyle={
+                Object {
+                        "mixBlendMode": "darken",
+                      }
+        }
+/>,
+      "_debugID": 41,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": GithubCorner {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "ariaLabel": "Open GitHub project",
+          "bannerColor": "#151513",
+          "direction": "right",
+          "href": "/",
+          "octoColor": "#fff",
+          "size": 80,
+          "svgStyle": Object {
+            "mixBlendMode": "darken",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 7,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <a
+          aria-label="Open GitHub project"
+          className="github-corner"
+          href="/"
+>
+          <svg
+                    height={80}
+                    style={
+                              Object {
+                                        "fill": "#fff",
+                                        "mixBlendMode": "darken",
+                                        "position": "absolute",
+                                        "right": 0,
+                                        "top": 0,
+                                      }
+                    }
+                    viewBox="0 0 250 250"
+                    width={80}
+          >
+                    <path
+                              className="octo-banner"
+                              d="M0 0l115 115h15l12 27 108 108V0z"
+                              fill="#151513"
+                    />
+                    <path
+                              className="octo-arm"
+                              d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16"
+                              style={
+                                        Object {
+                                                  "WebkitTransformOrigin": "130px 106px",
+                                                  "transformOrigin": "130px 106px",
+                                                }
+                              }
+                    />
+                    <path
+                              className="octo-body"
+                              d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"
+                    />
+          </svg>
+</a>,
+        "_debugID": 42,
+        "_renderedOutput": <a
+          aria-label="Open GitHub project"
+          className="github-corner"
+          href="/"
+>
+          <svg
+                    height={80}
+                    style={
+                              Object {
+                                        "fill": "#fff",
+                                        "mixBlendMode": "darken",
+                                        "position": "absolute",
+                                        "right": 0,
+                                        "top": 0,
+                                      }
+                    }
+                    viewBox="0 0 250 250"
+                    width={80}
+          >
+                    <path
+                              className="octo-banner"
+                              d="M0 0l115 115h15l12 27 108 108V0z"
+                              fill="#151513"
+                    />
+                    <path
+                              className="octo-arm"
+                              d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16"
+                              style={
+                                        Object {
+                                                  "WebkitTransformOrigin": "130px 106px",
+                                                  "transformOrigin": "130px 106px",
+                                                }
+                              }
+                    />
+                    <path
+                              className="octo-body"
+                              d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"
+                    />
+          </svg>
+</a>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <GithubCorner
+    ariaLabel="Open GitHub project"
+    bannerColor="#151513"
+    direction="right"
+    href="/"
+    octoColor="#fff"
+    size={80}
+    svgStyle={
+        Object {
+            "mixBlendMode": "darken",
+          }
+    }
+/>,
+}
+`;
+
 exports[`default <GithubCorner /> 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {

@@ -89,3 +89,9 @@ test('when style.stylesheet exists we use cssText', () => {
   expect(style.styleSheet.cssText).toMatchSnapshot();
   document.createElement = original;
 });
+
+test('can use svgStyle prop', () => {
+  const svgStyle = { mixBlendMode: 'darken' };
+  const wrapper = shallow(<GithubCorner svgStyle={svgStyle} />);
+  expect(wrapper).toMatchSnapshot();
+});
