@@ -13,32 +13,36 @@ const routes = (
     <Route
       exact
       path={`/${packageInfo.name}`}
-      render={() =>
+      render={() => (
         <App>
           <Home />
-        </App>}
+        </App>
+      )}
     />
     <Route
       exact
       path={`/${packageInfo.name}/home`}
-      render={() =>
+      render={() => (
         <App>
           <Home />
-        </App>}
+        </App>
+      )}
     />
     <Route
       exact
       path={`/${packageInfo.name}/about`}
-      render={() =>
+      render={() => (
         <App>
           <About />
-        </App>}
+        </App>
+      )}
     />
     <Route
-      render={() =>
+      render={() => (
         <App>
           <NotFound />
-        </App>}
+        </App>
+      )}
     />
   </Switch>
 );

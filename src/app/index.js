@@ -8,9 +8,7 @@ const store = configureStore();
 
 render(
   <Provider store={store}>
-    <BrowserRouter>
-      {routes}
-    </BrowserRouter>
+    <BrowserRouter>{routes}</BrowserRouter>
   </Provider>,
   document.getElementById('app')
 );
