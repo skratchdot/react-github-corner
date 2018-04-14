@@ -3,6 +3,10 @@
   "description": "Add a Github banner to your project page. A React version of: https://github.com/tholman/github-corners",
   "version": "2.2.0",
   "homepage": "https://github.com/skratchdot/react-github-corner/",
+  "files": [
+    "lib/",
+    "index.d.ts"
+  ],
   "main": "./lib/GithubCorner.js",
   "author": {
     "name": "skratchdot",
