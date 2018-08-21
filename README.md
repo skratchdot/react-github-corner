@@ -53,6 +53,7 @@ Here are the props you can pass to the `GithubCorner` instance:
 | ariaLabel | String | 'Open GitHub project' | The aria-label for a11y support |
 | className | String | undefined | Additional class names to be merged with the `github-corner` default |
 | svgStyle | Object | undefined | Custom styles to apply to the main `svg` element |
+| target | string | '_self' | Customize how links are opened |
 
 Any additional props will be added to the `<a />` tag that is rendered.
 For instance, you can do:

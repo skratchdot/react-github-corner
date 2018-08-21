@@ -10,6 +10,7 @@ interface GithubCornerProps {
     ariaLabel?: string;
     className?: string;
     svgStyle?: CSSProperties;
+    target?: string;
 }
 
 export default class GithubCorner extends React.Component<GithubCornerProps, any> {
