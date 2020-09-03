@@ -1,7 +1,7 @@
 {
   "name": "react-github-corner",
   "description": "Add a Github banner to your project page. A React version of: https://github.com/tholman/github-corners",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "homepage": "https://github.com/skratchdot/react-github-corner/",
   "files": [
     "lib/",
@@ -25,12 +25,13 @@
   "license": "MIT",
   "scripts": {
     "build": "npm-run-all clean format lint cover transpile webpack",
-    "clean": "npm-run-all clean:coverage clean:lib clean:dev clean:prod",
+    "clean": "npm-run-all clean:coverage clean:lib clean:build",
     "clean:coverage": "rimraf coverage/",
     "clean:lib": "rimraf lib/",
-    "clean:dev": "rimraf ./build/dev/react-github-corner/*",
-    "clean:prod": "rimraf ./build/prod/*",
+    "clean:build": "rimraf build/",
     "cover": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build/prod",
     "format": "prettier --write --single-quote 'src/**/*.js' '*.js'",
     "lint": "eslint src",
     "test": "jest",
@@ -64,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "gh-pages": "^3.1.0",
     "html-loader": "^0.5.5",
     "jest": "^23.6.0",
     "jsdom": "^12.0.0",
