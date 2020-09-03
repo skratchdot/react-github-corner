@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSProperties } from 'react';
+import { CSSProperties, AnchorHTMLAttributes } from 'react';
 
 interface GithubCornerProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     href?: string;
