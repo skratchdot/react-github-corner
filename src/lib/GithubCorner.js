@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import getGithubCornerStyles from './get-github-corner-styles.js';
+import { SecureLink } from 'react-secure-link';
 
 const githubCornerStyleId = '____GITHUB_CORNER_SUPER_SECRET___';
 const githubCornerStyles = getGithubCornerStyles();
@@ -23,7 +24,8 @@ export default class GithubCorner extends Component {
     bannerColor: PropTypes.string,
     ariaLabel: PropTypes.string,
     className: PropTypes.string,
-    svgStyle: PropTypes.object
+    svgStyle: PropTypes.object,
+    newTab: PropTypes.bool,
   };
   static defaultProps = {
     href: '/',
@@ -31,7 +33,8 @@ export default class GithubCorner extends Component {
     direction: 'right',
     octoColor: '#fff',
     bannerColor: '#151513',
-    ariaLabel: 'Open GitHub project'
+    ariaLabel: 'Open GitHub project',
+    newTab: false,
   };
   componentDidMount() {
     if (!document.getElementById(githubCornerStyleId)) {
@@ -57,6 +60,7 @@ export default class GithubCorner extends Component {
       ariaLabel,
       className,
       svgStyle,
+      newTab,
       ...otherProps
     } = this.props;
     const mainStyle = {
@@ -89,27 +93,45 @@ export default class GithubCorner extends Component {
     }
     const additionalClass =
       typeof className === 'string' ? ` ${className}` : '';
-    return (
-      <a
-        {...otherProps}
-        href={href}
-        className={`github-corner${additionalClass}`}
-        aria-label={ariaLabel}
+
+    const child = (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 250 250"
+        style={{
+          ...mainStyle,
+          ...svgStyle
+        }}
       >
-        <svg
-          width={size}
-          height={size}
-          viewBox="0 0 250 250"
-          style={{
-            ...mainStyle,
-            ...svgStyle
-          }}
-        >
-          <path className="octo-banner" d={pathBanner} fill={bannerColor} />
-          <path className="octo-arm" d={pathArm} style={armStyle} />
-          <path className="octo-body" d={pathBody} />
-        </svg>
-      </a>
+        <path className="octo-banner" d={pathBanner} fill={bannerColor} />
+        <path className="octo-arm" d={pathArm} style={armStyle} />
+        <path className="octo-body" d={pathBody} />
+      </svg>
     );
+
+    if (newTab) {
+      return (
+        <SecureLink
+          {...otherProps}
+          href={href}
+          className={`github-corner${additionalClass}`}
+          aria-label={ariaLabel}
+        >
+          {child}
+        </SecureLink>
+      );
+    } else {
+      return (
+        <a
+          {...otherProps}
+          href={href}
+          className={`github-corner${additionalClass}`}
+          aria-label={ariaLabel}
+        >
+          {child}
+        </a>
+      );
+    }
   }
 }
