@@ -68,7 +68,7 @@
     "gh-pages": "^3.1.0",
     "html-loader": "^0.5.5",
     "jest": "^23.6.0",
-    "jsdom": "^12.0.0",
+    "jsdom": "^16.5.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "markdown-loader": "^4.0.0",
